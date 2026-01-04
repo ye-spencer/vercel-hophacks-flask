@@ -56,12 +56,12 @@ function Login({ isMobile, email: initialEmail, login, isLoggedIn }) {
         style={{ backgroundColor: 'rgba(0, 29, 76, 0.9)' }}
       >
         <h2
-          className="font-bold text-white text-5xl text-center mb-3"
+          className="mb-3 text-5xl font-bold text-center text-white"
           style={{ fontVariant: 'small-caps' }}
         >
           Login
         </h2>
-        <div className="h-5 text-center mb-2 text-red-500">
+        <div className="h-5 mb-2 text-center text-red-500">
           {attempted && <p>Incorrect Username or Password</p>}
         </div>
         <div className="text-field">
@@ -95,15 +95,17 @@ function Login({ isMobile, email: initialEmail, login, isLoggedIn }) {
           >
             Login
           </button>
-          <div className="w-full flex justify-between">
+          <div className="flex justify-between w-full">
             <div className="flex">
-              <p className="text-gray-400 mr-2">{"Don't have an account yet?"}</p>
-              <Link to="/register/signup">
-                <p className="text-gray-200 hover:text-gray-400 transition-all">Sign Up</p>
-              </Link>
+              {/* Registration disabled */}
+              {/*
+              <p className="mr-2 text-gray-400">{"Don't have an account yet?"}</p>
+               <Link to="/register/signup">
+                <p className="text-gray-200 transition-all hover:text-gray-400">Sign Up</p>
+              </Link> */}
             </div>
             <Link to="/register/resetpassword">
-              <p className="text-gray-200 hover:text-gray-400 transition-all">Forgot Password?</p>
+              <p className="text-gray-200 transition-all hover:text-gray-400">Forgot Password?</p>
             </Link>
           </div>
         </div>

@@ -4,10 +4,10 @@ import SectionParagraph from '../ui/SectionParagraph';
 
 export default function Register() {
   return (
-    <div className="flex flex-col justify-center items-center h-full">
+    <div className="flex flex-col items-center justify-center h-full">
       <SectionHeader>Register</SectionHeader>
 
-      <div className="grid grid-cols-1 sm:grid-cols-3 gap-12 w-full max-w-5xl">
+      <div className="grid w-full max-w-5xl grid-cols-1 gap-12 sm:grid-cols-3">
         {[
           {
             img: 'sponsor-bird.png',
@@ -39,7 +39,7 @@ export default function Register() {
           </div>
         ))}
       </div>
-      <SectionParagraph className="mt-10 text-center text-sm">
+      <SectionParagraph className="mt-10 text-sm text-center">
         Sign Up for Pre / Post Hackathon Events!
       </SectionParagraph>
       <GlowButton

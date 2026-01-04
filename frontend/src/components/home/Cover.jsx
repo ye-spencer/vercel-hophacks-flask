@@ -32,23 +32,23 @@ export default function Cover() {
       <div className="font-montserrat font-bold text-[30px] leading-[60px] tracking-[0.05em] text-white">
         September 12–14, 2025
       </div>
-      <div className="flex items-center gap-x-6 py-4 w-full">
+      <div className="flex items-center w-full py-4 gap-x-6">
         {/* LinkTree */}
         <a
           href="https://linktr.ee/hophacks"
           target="_blank"
           rel="noopener noreferrer"
-          className="group relative inline-block"
+          className="relative inline-block group"
         >
           {/* Circular glow only on hover */}
-          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-0 opacity-0 group-hover:opacity-30 transition-opacity duration-300 pointer-events-none">
+          <div className="absolute z-0 transition-opacity duration-300 -translate-x-1/2 -translate-y-1/2 opacity-0 pointer-events-none top-1/2 left-1/2 group-hover:opacity-30">
             <div className="h-20 w-20 rounded-full bg-[#FFE194] blur-[20px]"></div>
           </div>
 
           <img
             src="https://hophacks-website.s3.us-east-1.amazonaws.com/images/candle.svg"
             alt="Candle"
-            className="h-12 w-12"
+            className="w-12 h-12"
           />
         </a>
         {/* Discord */}
@@ -56,17 +56,17 @@ export default function Cover() {
           href="https://discord.gg/8V8wmCWUhH"
           target="_blank"
           rel="noopener noreferrer"
-          className="group relative inline-block"
+          className="relative inline-block group"
         >
           {/* Circular glow only on hover */}
-          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-0 opacity-0 group-hover:opacity-30 transition-opacity duration-300 pointer-events-none">
+          <div className="absolute z-0 transition-opacity duration-300 -translate-x-1/2 -translate-y-1/2 opacity-0 pointer-events-none top-1/2 left-1/2 group-hover:opacity-30">
             <div className="h-20 w-20 rounded-full bg-[#FFE194] blur-[20px]"></div>
           </div>
 
           <img
             src="https://hophacks-website.s3.us-east-1.amazonaws.com/images/discord-logo.svg"
             alt="Join us on Discord"
-            className="h-12 w-12 relative z-10 transition duration-300"
+            className="relative z-10 w-12 h-12 transition duration-300"
           />
         </a>
         <GlowButton
@@ -77,8 +77,8 @@ export default function Cover() {
             document.getElementById('register-section')?.scrollIntoView({ behavior: 'smooth' });
           }}
         >
-          <div className="flex justify-center items-center gap-1">
-            Register
+          <div className="flex items-center justify-center gap-1">
+            Login
             <ArrowDownward />
           </div>
         </GlowButton>
