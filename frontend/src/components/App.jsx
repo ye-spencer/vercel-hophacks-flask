@@ -30,7 +30,7 @@ import TablesAndRooms from './judgetool/TablesAndRooms.jsx';
 import Team from './Team';
 import Login from './user_auth/Login'; //adjusted to be new path
 // import Tracks from './tracks/Tracks.jsx';
-import SignUp from './user_auth/signup/SignUp';
+// import SignUp from './user_auth/signup/SignUp';
 import Recap from './recap.jsx';
 
 // import SignUpChecks from './user_auth/signup/SignUpChecks.jsx'; //new paths
@@ -113,9 +113,10 @@ export default function App() {
                     <Login isMobile={isMobile} />
                   </Route>
 
-                  <Route path="/register/signup">
+                  {/* Registration disabled */}
+                  {/* <Route path="/register/signup">
                     <SignUp isMobile={isMobile} />
-                  </Route>
+                  </Route> */}
 
                   <Route path="/register/resetpassword">
                     <ResetPassword isMobile={isMobile} />

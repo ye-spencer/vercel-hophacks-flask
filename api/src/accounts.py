@@ -144,6 +144,9 @@ def create():
     :status 409: User alreay exists
 
     """
+    # Registrations are currently closed. Short-circuit and refuse new account creation.
+    return Response('Registrations are closed', status=403)
+
     if 'json_file' not in request.form:
         return Response('Data not in json format', status=400)
 

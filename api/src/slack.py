@@ -98,6 +98,9 @@ def notify_registration_in_channel():
     
     """
     
+    # Registrations are closed; do not post registration notifications.
+    return Response('Registrations disabled', status=404)
+
     if (request.json is None):
         return Response('Data not in json format', status=400)
 
