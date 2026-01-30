@@ -1,0 +1,63 @@
+@import "tailwindcss";
+
+:root {
+    /* Color Palette */
+    --bg-primary: #0F1827;
+    --bg-secondary: #141230;
+    --bg-overlay: rgba(0, 0, 0, 0.3);
+    --bg-card: #172745;
+
+    --accent-gold: #FFE188;
+    --accent-gold-hover: #FFE194;
+    --accent-blue: #29A0E2;
+    --accent-blue-hover: #51A5F7;
+
+    --text-primary: #ffffff;
+    --text-secondary: rgba(255, 255, 255, 0.8);
+
+    --border-white: rgba(255, 255, 255, 0.4);
+
+    /* Fonts */
+    --font-montserrat: var(--font-montserrat);
+    --font-inter: var(--font-inter);
+    --font-anton: var(--font-anton);
+    --font-vcr: var(--font-vcr);
+}
+
+@theme inline {
+    --color-bg-primary: var(--bg-primary);
+    --color-bg-secondary: var(--bg-secondary);
+    --color-bg-overlay: var(--bg-overlay);
+    --color-bg-card: var(--bg-card);
+
+    --color-accent-gold: var(--accent-gold);
+    --color-accent-gold-hover: var(--accent-gold-hover);
+    --color-accent-blue: var(--accent-blue);
+    --color-accent-blue-hover: var(--accent-blue-hover);
+
+    --color-text-primary: var(--text-primary);
+    --color-text-secondary: var(--text-secondary);
+
+    --color-border-white: var(--border-white);
+
+    --font-montserrat: var(--font-montserrat);
+    --font-inter: var(--font-inter);
+    --font-anton: var(--font-anton);
+    --font-vcr: var(--font-vcr);
+}
+
+body {
+    background: var(--bg-primary);
+    color: var(--text-primary);
+    font-family: var(--font-inter), sans-serif;
+    overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--font-montserrat), sans-serif;
+}
